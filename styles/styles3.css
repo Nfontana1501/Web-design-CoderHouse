@@ -705,7 +705,7 @@ body{
 
 
 
-@media (max-width: 360px){
+@media (max-width: 450px){
     .header{
         grid-template-columns: 60% 40%;
         grid-template-rows: 25vh;
