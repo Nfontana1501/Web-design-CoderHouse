@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.png">
     <title>Cerro Patagonia</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>    
@@ -56,7 +57,7 @@
         </header>
         <main class="main">
             <div class="main__container--montania">
-                <article class="card card1">
+                <article class="card card1" data-aos="zoom-in">
                     <div class="card__linkimg">
                         <a class="card__link" href="">
                             <img class="card__img" src="../images/pista.jpg" alt="pista cerro patagonia">
@@ -72,7 +73,7 @@
                     </div>
                     <!--Cuando las sub secciones se encuentren creadas, la imagen se incluirá dentro de una etuiqueta "a" que deberá redirigir a la sub sección en cuestión-->
                 </article>
-                <article class="card__reverse card2">
+                <article class="card__reverse card2" data-aos="zoom-in">
                     <div class="card__linkimg">
                         <a class="card__link" href="">
                             <img class="card__img" src="../images/mapapista.jpg" alt="mapa de pistas cerro patagonia">
@@ -88,7 +89,7 @@
                     </div>
                     <!--Cuando las sub secciones se encuentren creadas, la imagen se incluirá dentro de una etuiqueta "a" que deberá redirigir a la sub sección en cuestión-->
                 </article>
-                <article class="card card3">
+                <article class="card card3" data-aos="zoom-in">
                     <div class="card__linkimg">
                         <a class="card__link" href="">
                             <img class="card__img" src="../images/ski.jpg" alt="galeria de fotos cerro patagonia">
@@ -104,7 +105,7 @@
                     </div>
                     <!--Cuando las sub secciones se encuentren creadas, la imagen se incluirá dentro de una etuiqueta "a" que deberá redirigir a la sub sección en cuestión-->
                 </article>
-                <article class="card__reverse card4">
+                <article class="card__reverse card4" data-aos="zoom-in">
                     <div class="card__linkimg">
                         <a class="card__link" href="">
                             <img class="card__img" src="../images/aerosilla.jpg" alt="medios de elevacion cerro patagonia">
@@ -120,7 +121,7 @@
                     </div>
                     <!--Cuando las sub secciones se encuentren creadas, la imagen se incluirá dentro de una etuiqueta "a" que deberá redirigir a la sub sección en cuestión-->
                 </article>
-                <article class="card__iframe card5">
+                <article class="card__iframe card5" data-aos="zoom-in">
                     <div class="card__title">
                         <h2  class="card__title--title">Ubicación</h2>
                     </div>
@@ -170,5 +171,9 @@
             </div>
             <!-- </div> -->
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

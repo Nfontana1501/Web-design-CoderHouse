@@ -18,6 +18,13 @@ body{
 }
 
 
+@keyframe logo__animation{
+    0% {display: none;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.50;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
 
 /* ACA COMIENZA EL HEADER */
 
@@ -39,7 +46,9 @@ body{
     margin-left: 0;
     width: auto;
     height: 100%;
-    transition: all 0.5s;
+    animation-name: logo__animation;
+    animation-delay: 2s;
+    animation-duration: 300s;
 }
 
 .logo__link--img{
