@@ -18,14 +18,6 @@ body{
 }
 
 
-@keyframe logo__animation{
-    0% {display: none;}
-    25% {opacity: 0.25;}
-    50% {opacity: 0.50;}
-    75% {opacity: 0.75;}
-    100% {opacity: 1;}
-}
-
 /* ACA COMIENZA EL HEADER */
 
 .header{
@@ -46,10 +38,8 @@ body{
     margin-left: 0;
     width: auto;
     height: 100%;
-    animation-name: logo__animation;
-    animation-delay: 2s;
-    animation-duration: 300s;
 }
+
 
 .logo__link--img{
     text-decoration: none;
@@ -400,10 +390,24 @@ body{
     position: absolute;
     top: 50%;
     display: none;
+    transition: all 2s;
 }
 
 .cardact__img:hover{
     opacity: 0.7;
+    animation-name: animation;
+    animation-iteration-count: 1;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+@keyframes animation {
+    0%{transform: rotatez(0deg);}
+    25%{transform: rotatez(90deg);}
+    50%{transform: rotatez(180deg);}
+    75%{transform: rotatez(270deg);}
+    100%{transform: rotatez(360deg);}
 }
 
 .cardact__img:hover .cardact__paragraph{
