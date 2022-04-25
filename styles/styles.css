@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 html{
     font-size: 62.5%;
 }
@@ -12,7 +7,6 @@ html{
 body{
     height: 100vh;
     overflow-x: hidden;
-    /* background-image: url(../images/background.png); */
     font-family: 'Outfit', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
@@ -20,148 +14,32 @@ body{
 
 /* ACA COMIENZA EL HEADER */
 
-.header{
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 15vh;
-    grid-template-areas: 
-        "logo_n navbar";
-}
-
-.logo{
-    grid-area: logo_n;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 0;
-    width: auto;
-    height: 100%;
-}
-
-
-.logo__link--img{
-    text-decoration: none;
-    color: rgb(0, 0, 58);
-    height: 100%;
-    display: inline-block;
-}
-
-.logo__link--title{
-    text-decoration: none;
-    color: rgb(0, 0, 58);
+.header__margin{
+    margin-right: -15px;
 }
 
 .logo__img{
-    height: 100%;
+    width: 50px;
+    height: 50px;
 }
 
-.logo__title{
-    min-width: 160px;
-    font-size: 2.4rem;
-    text-align: center;
-    color: rgb(0, 0, 58);
-}
-
-.navbar{
-    grid-area: navbar;
+.logo__cont{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-right: 0;
-    background-image: url(../images/bgazul.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-left: 1%;
 }
 
-.navbar__menu {
-    list-style: none;
-    width: 70%;
-    margin: 5%;
-    display: flex;
-    justify-items: space-between;
-    font-size:0 /* truco por el uso de inline-block*/
+.logo__text{
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, 0.562);
+    margin-bottom: 0;
+    margin-left: 5%;
 }
 
-.menu__item {
-    display: inline-block;
-    width: 25%;
-    height: 100%;
-    position: relative;
-    font-size: 1.8rem;   
-    padding: 2px 20px; 
-    margin: 0 10px;
-    border: solid 1px white;
-    border-radius: 10px;
-    text-align: center;
-    transition: all 0.5s;
+.menuitem__prop{
+    color:rgba(255, 255, 255, 0.562);
+    font-size: 1.2rem;
 }
-
-.menu__item:hover {    
-    transform: scale(1.1);
-    background-color: rgb(253, 253, 253, 0.2);
-    color: white;
-}
-
-.menu__link{
-    text-decoration: none;
-    height: 100%;
-    font-size: 1.8rem;
-    color: white;
-    display: block;
-    transition: all 0.5s;
-}
-
-.menu__link:hover{   
-    color: white;
-    transform: scale(1.1);
-}
-
-.navbar__submenu {
-    position: absolute;
-    display: none;
-}
-
-.submenu__item {
-    display: block;
-}
-
-.menu__item:hover .navbar__submenu {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin-top: 3px;
-    padding: 2px 0.5px 4px 0.5px;
-    border-radius: 5px;
-    background-image: url(../images/bgazul.jpg);
-    position: fixed;
-    top: auto;
-    left: 0;
-}
-
-.menu__item:hover .submenu__item {
-    color: white;
-    margin: 2px;
-    transition: all 0.5s;
-}
-
-.menu__item:hover .submenu__link{
-    text-decoration: none;
-    font-size: 1.8rem;
-    color: white;
-    display: block;
-}
-
-.menu__item:hover .submenu__link:hover{   
-    background-color: rgb(253, 253, 253, 0.2);
-    color: white;
-}
-
-
 
 /* ACA COMIENZA EL MAIN */
 
@@ -236,90 +114,40 @@ body{
     grid-area: boton6;
 }
 
+/* ESTA SECCIÓN YA ESTA JAMON */
 .main__container--montania{
-    grid-area: main;
     display: grid;
     justify-items: center;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 0.5fr);
+    height: auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 30% 30% 40%;
     grid-template-areas: 
-        "card1"
-        "card2"
-        "card3"
-        "card4"
-        "card5";
+        "card1 card2"
+        "card3 card4"
+        "card5 card5";
 }
 
-.card{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    width: 50%;
-    margin-top: 2%;
+.cardmont{
+    margin: 5% 12.5% 5% 12.5%;
+    border: solid 1px rgba(168, 168, 168, 0.651);
+    width: 75%;
+    height: auto;
 }
 
-.card__reverse{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    height: 90%;
-    width: 50%;
-    margin-top: 2%;
+.imgmont{
+    max-height: 240px;
 }
 
 .card__iframe{
-    width: 50%;
+    width: 75%;
 }
 
-.card__linkimg{
-    height: 90%;
-}
-
-.card__text{
-    padding: 0 2% 0 2%;
+.card__iframe--iframe{
     width: 100%;
-    height: auto;
 }
 
-.card__title{
-    height: auto;
-    padding: 5px;
-}
-
-.card__title--title{
-    text-align: center;
-    font-size: 18px;
-    width: 100%;
-    padding-bottom: 5px;
-    border-bottom: solid 1px;
-}
-
-.card__img{
-    height: 200px;
-    width: 150px;
-    border-radius: 10px;
-}
-
-.card__img:hover{
-    opacity: 0.7;
-}
-
-.card__paragraph{
-    text-align: center;
-    height: auto;
-}
-
-.card__paragraph--p{
-    font-size: 14px;
-    display: inline-block;
-    height: auto;
-}
-
-.card__link--iframe{
-    width: 100%;
-    margin: 10px 0 10px 0;
+.card-text{
+    font-size: 1.2rem;
 }
 
 .card1{
@@ -342,26 +170,31 @@ body{
     grid-area: card5;
 }
 
-.main__container--actividades{
-    grid-area: main;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    grid-template-columns: 10% 1fr 1fr 1fr 10%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-        ". c1 c2 c3 ."
-        ". c4 c5 c6 .";
-    justify-items: center;
-}
 
 .cardact{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border: solid 3px rgb(0, 0, 58);
+    width: 100%;
 }
 
+/* ACA TERMINA LA SECCIÓN QUE ESTA JAMON */
+
+.act__img{
+    max-height: 350px;
+}
+
+.act__btn{
+    width: 15%;
+}
+
+.act__btn{
+    color:rgba(255, 255, 255, 0.562);
+    font-size: 1.2rem;
+}
+
+.act__btn:hover{
+    color:rgba(255, 255, 255, 0.8);
+}
+
+/* 
 .cardact__linkimg{
     height: 100%;
 }
@@ -436,7 +269,7 @@ body{
 
 .c6{
     grid-area: c6;
-}
+} */
 
 .main__container--servicios{
     grid-area: main;
@@ -607,116 +440,105 @@ body{
 
 /* ACA COMIENZA EL FOOTER */
 
-.footer{
-    grid-area:footer;
-    background-image: url(../images/bgazul.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "fb1 fb2 fb3 fb4 l r r";
-    justify-items: center;
-    align-items: center;
+.logoredes__logo--img{
+    width: 50px;
+    height: 50px;
+    padding: 5%;
 }
 
-.footer__button{
-    grid-area: footer;
-    display: inline-block;
-    width: 75%;
-    height: 25px;
-    padding: 2px 0 2px 0;
-    font-size: 18px;   
-    margin: 0 10px;
-    text-align: center;
-    border: solid 1px white;
-    border-radius: 10px;
-    transition: all 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.logoredes__red--img{
+    width: 50px;
+    height: 50px;
+    padding: 5%;
+} 
 
-.footer__button:hover{
-    transform: scale(1.1);
-    background-color: rgb(253, 253, 253, 0.2);
-    color: white;
-}
-
-.footer__button1{
-    grid-area: fb1;
-}
-
-.footer__button2{
-    grid-area: fb2;
-}
-
-.footer__button3{
-    grid-area: fb3;
-}
-
-.footer__button4{
-    grid-area: fb4;
+.logoredes__logo--link{
+    margin: 2% 4% 2% 2%;
 }
 
 .footer__button--link{
-    color: white;
-    max-width: 100%;
-    border-radius: 10px;
-    padding: 2px 20px 2px 20px; 
+    color: rgba(255, 255, 255, 0.562); 
     text-decoration: none;
-    font-size: 1.8rem;
-    display: block;
-    transition: all 0.5s;
+    font-size: 1.2rem;
 }
 
-.footer__button--link:hover{   
-    color: white;
-    transform: scale(1.1);
+.footer__button--link:hover{
+    color: rgba(255, 255, 255, 0.8); 
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
-.logoredes__logo{
-    grid-area: l;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 15%;
-    height: 100%;
+.logoredes__logo--title{
+    font-size: 1.2rem;
+    color:rgba(255, 255, 255, 0.562);
+    margin:0;
 }
 
-.logoredes__logo--img{
-    width: 80px;
-    height: 80px;
+.menuitem__prop{
+    color:rgba(255, 255, 255, 0.562);
+    font-size: 1.2rem;
 }
 
 .logoredes__logo--link{
     text-decoration: none;
-    text-align: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.562);
 }
 
-.logoredes__red{
-    grid-area: r;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 5%;
+@media (max-width: 768px){
+    .main__container--montania{
+        display: grid;
+        justify-items: center;
+        height: auto;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 35% 35% 30%;
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card5";
+    }
+    .cardmont{
+        margin: 5% 12.5% 5% 12.5%;
+        border: solid 1px rgba(168, 168, 168, 0.651);
+        width: 75%;
+        height: auto;
+    }
+    
+    .imgmont{
+        max-height: 100px;
+    }
+    
+    .card__iframe{
+        width: 75%;
+    }
+    
+    .card__iframe--iframe{
+        width: 100%;
+        height: 80%;
+    } 
+    .act__img{
+        max-height: 200px;
+    }  
 }
 
-.logoredes__red--link{
-    text-decoration: none;
-    padding: 10px;
+@media (max-width: 576px){
+    .main__container--montania{
+        display: grid;
+        justify-items: center;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5";
+    }
+    .cardmont{
+        width: 50%;
+    }
 }
-
-.logoredes__red--img{
-    width: 60px;
-    height: 60px;
-}
-
-
 
 @media (max-width: 360px){
     .header{
