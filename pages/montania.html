@@ -6,175 +6,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.png">
     <title>Cerro Patagonia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>    
-        <header class="header">                      
-            <div class="logo">
-                <a class="logo__link--img" href="../index.html"> 
-                    <img class="logo__img animate__animated animate__flip" src="../images/logo.png" alt="logo cerro patagonia">
-                </a> 
-                <a class="logo__link--title" href="../index.html">        
-                    <h1 class="logo__title">Cerro Patagonia</h1>
-                </a> 
-            </div>         
-            <nav class="navbar">           
-                <ul class="navbar__menu">
-                    <li class="menu__item"> <a class="menu__link" href="montania.html">Montaña</a>
-                        <ul class="navbar__submenu">                        
-                            <li class="submenu__item"><a class="submenu__link" href="">Estado de pistas</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Mapa de pistas</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Fotos y videos</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Ficha técnica</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Ubicación</a></li>
-                        </ul>             
-                        <!--todas las sub listas serán linkeadas en posteriores entregas, cuando las secciones se encuentren creadas-->
-                    </li>
-                    <li class="menu__item"> <a class="menu__link" href="actividades.html">Actividades</a>
-                        <ul class="navbar__submenu"> 
-                            <li class="submenu__item"><a class="submenu__link" href="">Ski y Snowboard</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Snowpark</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Ski school</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Ski adaptado</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Caminata con raquetas</a></li>
-                        </ul>                   
-                        <!--todas las sub listas serán linkeadas en posteriores entregas, cuando las secciones se encuentren creadas-->
-                    </li>
-                    <li class="menu__item"> <a class="menu__link" href="servicios.html"> Servicios </a>
-                        <ul class="navbar__submenu">
-                            <li class="submenu__item"><a class="submenu__link" href="">Tarifa</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Compra online</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Rental</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="">Gastronomía</a></li>
-                        </ul>                   
-                        <!--todas las sub listas serán linkeadas en posteriores entregas, cuando las secciones se encuentren creadas-->
-                    </li>
-                    <li class="menu__item"> <a class="menu__link" href="contacto.html"> Contacto </a> 
-                    </li>
-                </ul>
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-expand-md row">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo__cont col-lg-4" href="../index.html">
+                        <img src="../images/logo.png" alt="logo cerro patagonia" class="d-inline-block align-text-center logo__img img-fluid">
+                        <P class="logo__text"> Cerro Patagonia</P>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end bg-dark col-lg-8" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title menuitem__prop" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nabvar__margin">
+                                <li class="nav-item">
+                                    <a class="nav-link menuitem__prop" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menuitem__prop active" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Montaña
+                                    </a>
+                                    <ul class="dropdown-menu bg-dark" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Estado de pistas</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">mapa de pistas</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Fotos y videos</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ficha técnica</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ubicación</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider menuitem__prop">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="montania.html">Montaña</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menuitem__prop" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Actividades
+                                    </a>
+                                    <ul class="dropdown-menu bg-dark" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ski y Snowboard</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Snowpark</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ski school</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ski adaptado</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Caminata con raquetas</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider menuitem__prop">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="actividades.html">Actividades</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menuitem__prop" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Servicios
+                                    </a>
+                                    <ul class="dropdown-menu bg-dark" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Tarifas</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Compra online</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Rental</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Gastronomía</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider menuitem__prop">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="servicios.html">Servicios</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menuitem__prop" aria-current="page" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
-        <main class="main">
-            <div class="main__container--montania">
-                <article class="card card1">
-                    <div class="card__linkimg">
-                        <a class="card__link" href="">
-                            <img class="card__img" src="../images/pista.jpg" alt="pista cerro patagonia">
-                        </a>
+        <main class="container-fluid">
+            <div class="row main__container--montania">
+                <article class="cardmont card1">
+                    <img src="../images/pista.jpg" class="card-img-top imgmont img-fluid" alt="pista cerro patagonia">
+                    <div class="card-body">
+                        <h3 class="card-title">Estado de pistas</h3>
+                        <p class="card-text">En esta sección podras conocer el estado de las pistas del cerro patagonia.</p>
+                        <a href="#" class="btn btn-dark">Conocer estado de pistas</a>
                     </div>
-                    <div class="card__text">
-                        <div class="card__title">
-                            <h2 class="card__title--title">Estado de pistas</h2>
-                        </div>
-                        <div class="card__paragraph">
-                            <p class="card__paragraph--p">En esta sección podras conocer el estado de las pistas del cerro patagonia</p>
-                        </div>
-                    </div>
-                    <!--Cuando las sub secciones se encuentren creadas, la imagen se incluirá dentro de una etuiqueta "a" que deberá redirigir a la sub sección en cuestión-->
                 </article>
-                <article class="card__reverse card2">
-                    <div class="card__linkimg">
-                        <a class="card__link" href="">
-                            <img class="card__img" src="../images/mapapista.jpg" alt="mapa de pistas cerro patagonia">
-                        </a>
+                <article class="cardmont card2">
+                    <img src="../images/mapapista.jpg" class="card-img-top imgmont img-fluid" alt="pista cerro patagonia">
+                    <div class="card-body">
+                        <h3 class="card-title">Mapa de pistas</h3>
+                        <p class="card-text">En esta sección podras ver el mapa de pistas de cerro patagonia, conocer su dificultad y medios de acceso.</p>
+                        <a href="#" class="btn btn-dark">Ver mapa de pistas</a>
                     </div>
-                    <div class="card__text">
-                        <div class="card__title">
-                            <h2 class="card__title--title">Mapa de pistas</h2>
-                        </div>
-                        <div class="card__paragraph">
-                            <p class="card__paragraph--p">En esta sección podras ver el mapa de pistas de cerro patagonia y conocer su dificultad expresada por colores de las mismas. También podras conocer los distintos medios de elevación con los cuales acceder a las pistas</p>
-                        </div>
-                    </div>
-                    <!--Cuando las sub secciones se encuentren creadas, la imagen se incluirá dentro de una etuiqueta "a" que deberá redirigir a la sub sección en cuestión-->
                 </article>
-                <article class="card card3" data-aos="zoom-in">
-                    <div class="card__linkimg">
-                        <a class="card__link" href="">
-                            <img class="card__img" src="../images/ski.jpg" alt="galeria de fotos cerro patagonia">
-                        </a>
+                <article class="cardmont card3">
+                    <img src="../images/ski.jpg" class="card-img-top imgmont img-fluid" alt="pista cerro patagonia">
+                    <div class="card-body">
+                        <h3 class="card-title">Fotos y videos</h3>
+                        <p class="card-text">En esta sección podras conocer el estado de las pistas del cerro patagonia.</p>
+                        <a href="#" class="btn btn-dark"> Galería de fotos y videos</a>
                     </div>
-                    <div class="card__text">
-                        <div class="card__title">
-                            <h2 class="card__title--title">Fotos y videos</h2>
-                        </div>
-                        <div class="card__paragraph">
-                            <p class="card__paragraph--p">En esta sección podras encontrar una galería de fotos y videos tomadas en el cerro patagonia por nuestro equipo profesional de fotografía</p>
-                        </div>
-                    </div>
-                    <!--Cuando las sub secciones se encuentren creadas, la imagen se incluirá dentro de una etuiqueta "a" que deberá redirigir a la sub sección en cuestión-->
                 </article>
-                <article class="card__reverse card4" data-aos="zoom-in">
-                    <div class="card__linkimg">
-                        <a class="card__link" href="">
-                            <img class="card__img" src="../images/aerosilla.jpg" alt="medios de elevacion cerro patagonia">
-                        </a>
+                <article class="cardmont card4">
+                    <img src="../images/aerosilla.jpg" class="card-img-top imgmont img-fluid" alt="pista cerro patagonia">
+                    <div class="card-body card__text">
+                        <h3 class="card-title">Ficha técnica</h3>
+                        <p class="card-text">En esta sección podras conocer la ficha técnica del cerro, con sus pistas, opciones fuera de pista y medios de elevación disponible</p>
+                        <a href="#" class="btn btn-dark">Ver ficha técnica</a>
                     </div>
-                    <div class="card__text">
-                        <div class="card__title">
-                            <h2 class="card__title--title">Ficha técnica</h2>
-                        </div>
-                        <div class="card__paragraph">
-                            <p class="card__paragraph--p">En esta sección podras conocer la ficha técnica del cerro, con la cantidad de pistas, grados de dificultad disponible, opciones fuera de pista y medios de elevación disponible</p>
-                        </div>
-                    </div>
-                    <!--Cuando las sub secciones se encuentren creadas, la imagen se incluirá dentro de una etuiqueta "a" que deberá redirigir a la sub sección en cuestión-->
                 </article>
-                <article class="card__iframe card5" data-aos="zoom-in">
-                    <div class="card__title">
-                        <h2  class="card__title--title">Ubicación</h2>
+                <article class="cardmont card5 card__iframe">
+                    <iframe class="card__iframe--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.185701654417!2d-71.28720763501862!3d-40.13814702833705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110bff07aa2d83%3A0xd2bcb4443d47596d!2sChapelco%2C%20San%20Martin%20de%20los%20Andes%2C%20Neuqu%C3%A9n!5e0!3m2!1ses-419!2sar!4v1648474697053!5m2!1ses-419!2sar" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="card-body">
+                        <h3 class="card-title">Ubicación</h3>
                     </div>
-                    <iframe class="card__link--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.185701654417!2d-71.28720763501862!3d-40.13814702833705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110bff07aa2d83%3A0xd2bcb4443d47596d!2sChapelco%2C%20San%20Martin%20de%20los%20Andes%2C%20Neuqu%C3%A9n!5e0!3m2!1ses-419!2sar!4v1648474697053!5m2!1ses-419!2sar" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <!--Acá utilice la ubicación de un cerro conocido, nose si es correcto o debería utilizar una ubicación ficticia-->
-                </article>   
+                </article>
             </div> 
         </main> 
-        <footer class="footer">
-            <div class="footer__button footer__button1">
-                <a class="footer__button--link" href="montania.html">Montaña</a> 
+        <footer class="footer bg-dark row">
+            <div class="buttons row align-items-center justify-content-center col-lg-5 col-md-5 col-sm-6 col-12">
+            <div class="footer__button footer__button1 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center align-items-center">
+                <a class="nav-link footer__button--link text-center" href="montania.html">Montaña</a> 
             </div>
-            <div class="footer__button footer__button2">
-                <a class="footer__button--link" href="actividades.html">Actividades</a> 
+            <div class="footer__button footer__button2 align-text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                <a class="nav-link footer__button--link text-center" href="actividades.html">Actividades</a> 
             </div>
-            <div class="footer__button footer__button3">
-                <a class="footer__button--link" href="servicios.html">Servicios</a> 
+            <div class="footer__button footer__button3 align-text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                <a class="nav-link footer__button--link text-center" href="servicios.html">Servicios</a> 
             </div>
-            <div class="footer__button footer__button4">
-                <a class="footer__button--link" href="contacto.html">Contacto</a> 
+            <div class="footer__button footer__button4 align-text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                <a class="nav-link footer__button--link text-center" href="contacto.html">Contacto</a> 
             </div>
-            <!-- <div class="logoredes"> -->
-            <div class="logoredes__logo">
+        </div>
+            <div class="logoredes d-flex row justify-content-end col-lg-7 col-md-7 col-sm-6 col-12">
+            <div class="logoredes__logo d-flex align-items-center justify-content-center col-lg-6 col-md-6 col-sm-6 col-12">
                 <a class="logoredes__logo--link" href="../index.html"> 
-                    <img class="logoredes__logo--img" src="../images/logo.png" alt="logo cerro patagonia">
+                    <img class="logoredes__logo--img img-fluid" src="../images/logo.png" alt="logo cerro patagonia">
                 </a>
                 <a class="logoredes__logo--link" href="../index.html">
-                    <h3 class="logoredes__logo--title">Cerro Patagonia</h3>
+                    <h3 class="logoredes__logo--title align-text-center">Cerro Patagonia</h3>
                 </a>
             </div>
-            <div class="logoredes__red">
+            <div class="logoredes__red d-flex justify-content-center align-items-center offset-3 col-lg-3 col-md-3 col-sm-3 col-12">
                 <div class="logoredes__red--fb">
                     <a class="logoredes__red--link" href="https://facebook.com" target="_blank">
-                        <img class="logoredes__red--img" src="../images/facebookicon.png" alt="facebook icon">               
+                        <img class="logoredes__red--img img-fluid" src="../images/facebookicon.png" alt="facebook icon">               
                     </a>
                 </div>
                 <div class="logoredes__red--ig">
                     <a class="logoredes__red--link" href="https://instagram.com" target="_blank">
-                        <img class="logoredes__red--img" src="../images/instagramicon.png" alt="instagram icon">               
+                        <img class="logoredes__red--img img-fluid" src="../images/instagramicon.png" alt="instagram icon">               
                     </a>
                 </div>
                 <div class="logoredes__red--tw">
                     <a class="logoredes__red--link" href="https://twitter.com" target="_blank">
-                        <img class="logoredes__red--img" src="../images/twittericon.png" alt="twitter icon">               
+                        <img class="logoredes__red--img img-fluid" src="../images/twittericon.png" alt="twitter icon">               
                     </a>
                 </div>
             </div>
-            <!-- </div> -->
         </footer>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+        </div> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
