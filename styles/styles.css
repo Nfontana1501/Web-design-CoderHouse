@@ -114,7 +114,7 @@ body{
     grid-area: boton6;
 }
 
-/* ESTA SECCIÓN YA ESTA JAMON */
+/* SECCIÓN MONTAÑA */
 .main__container--montania{
     display: grid;
     justify-items: center;
@@ -170,13 +170,7 @@ body{
     grid-area: card5;
 }
 
-
-.cardact{
-    width: 100%;
-}
-
-/* ACA TERMINA LA SECCIÓN QUE ESTA JAMON */
-
+/* SECCION ACTIVIDADES */
 .act__img{
     max-height: 350px;
 }
@@ -193,6 +187,7 @@ body{
 .act__btn:hover{
     color:rgba(255, 255, 255, 0.8);
 }
+
 
 /* 
 .cardact__linkimg{
