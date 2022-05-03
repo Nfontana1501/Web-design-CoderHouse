@@ -57,6 +57,10 @@ body{
     height: 90vh;
 }
 
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+
 .boton__link{
     color: rgba(255, 255, 255, 0.562);    
     text-decoration: none;
@@ -129,14 +133,59 @@ body{
     grid-area: card5;
 }
 
+/* SUB-SECCIÓN GALERIA */
+
+.galeria__container{
+    width: 80%;
+}
+.card{
+    margin-bottom: 0.4%;
+}
+
+.modal__container{
+    max-width: 750px;
+    max-height: 485px;
+}
+
+.modal__link{
+    background-color: none;
+    margin-bottom: 0.5%;
+    padding: 0;
+    margin-right: 0.4%;
+}
+
+.modal__title{
+    color:rgba(168, 168, 168, 0.651);
+}
+
+.modal__button{
+    color: #000000;
+    background-color: #434649;
+}
+
+.modal__button:hover{
+    color: #b5b9bd;
+}
+
+.img__modal{
+    width: 100%;
+    height: auto;
+    max-height: 177.3px;
+    cursor: pointer;
+}
+
+.img__modal:hover{
+    opacity: 0.8;
+}
+
+.img__inmodal{
+    width: 100%;
+}
+
 /* SECCION ACTIVIDADES */
 
 .act__img{
     max-height: 350px;
-}
-
-.act__btn{
-
 }
 
 .act__btn{
