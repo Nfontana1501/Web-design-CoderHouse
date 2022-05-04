@@ -1,0 +1,25 @@
+/* SECCIÓN SERVICIOS */
+
+.card__servicios{
+    margin: 5% 12.5% 5% 12.5%;
+    border: solid 1px $color_letra_secondary;
+    width: 75%;
+    height: auto;
+}
+
+.servicios__img{
+    max-height: 350px;
+    min-height: 350px;
+}
+.servicios__title{
+    color: black;
+}
+
+.servicios__btn{
+    color: $color_letra_primary;
+    font-size: 1.2rem;
+}
+
+.servicios__btn:hover{
+    color: $color_letra_terciary;
+}

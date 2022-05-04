@@ -1,0 +1,27 @@
+/* SECCIÓN INDEX */
+
+.index__main{
+    margin-left: -15px;
+    margin-right: -15px;
+    border-bottom: solid 1px lightgray;
+}
+
+.carousel__main{
+    height: 90vh;
+}
+
+.body__img{
+    height: 90vh;
+}
+
+.boton__link{
+    color: $color_letra_primary;    
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+}
+
+.boton__link:hover{
+    color: $color_letra_terciary;
+}
