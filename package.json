@@ -1,0 +1,26 @@
+{
+  "name": "cerropatagonia",
+  "version": "1.0.0",
+  "description": "* HTML\r * CSS + Box Modeling\r * Flexbox\r * Grids\r * Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss styles/styles2.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nfontana1501/cerropatagonia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nfontana1501/cerropatagonia/issues"
+  },
+  "homepage": "https://github.com/Nfontana1501/cerropatagonia#readme"
+}
