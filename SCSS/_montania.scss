@@ -1,0 +1,59 @@
+/* SECCIÓN MONTAÑA */
+
+.main__container--montania{
+    display: grid;
+    justify-items: center;
+    height: auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 30% 30% 40%;
+    grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "card5 card5";
+}
+
+.cardmont{
+    margin: 5% 12.5% 5% 12.5%;
+    border: solid 1px rgba(168, 168, 168, 0.651);
+    width: 75%;
+    height: auto;
+}
+
+.imgmont{
+    max-height: 240px;
+}
+
+.cardmont__iframe{
+    margin: 5% 12.5% 5% 12.5%;
+    border: solid 1px rgba(168, 168, 168, 0.651);
+    width: 75%;
+    height: auto;
+}
+
+.card__iframe--iframe{
+    width: 100%;
+}
+
+.card-text{
+    font-size: 1.2rem;
+}
+
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+.card4{
+    grid-area: card4;
+}
+
+.card5{
+    grid-area: card5;
+}
