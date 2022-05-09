@@ -1,7 +1,7 @@
 /* SUB-SECCIÓN GALERIA */
 
 .title__primary{
-    color: rgba(255, 255, 255, 0.562);
+    color: $color_letra_primary;
     margin: 1%;
     padding: 0;
 }
@@ -33,7 +33,7 @@
 }
 
 .modal__title{
-    color:rgba(168, 168, 168, 0.651);
+    color: $color_letra_secondary;
 }
 
 .modal__button{

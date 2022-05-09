@@ -20,7 +20,7 @@
 }
 
 .boton__link{
-    color: rgba(255, 255, 255, 0.562);    
+    color: $color_letra_primary;    
     text-decoration: none;
     width: 100%;
     height: auto;
@@ -28,5 +28,5 @@
 }
 
 .boton__link:hover{
-    color: rgba(255, 255, 255, 0.8);
+    color: $color_letra_terciary;
 }

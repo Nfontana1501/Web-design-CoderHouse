@@ -55,11 +55,11 @@
     border-radius: 5px;
     padding: 5px;
     margin: 20px 20px 0 0;
-    color: rgba(255, 255, 255, 0.562); 
+    color: $color_letra_primary; 
 }
 
 .form__button:hover{
-    color: rgba(255, 255, 255, 0.8);
+    color: $color_letra_terciary;
 }
 
 .form__item{
