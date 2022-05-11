@@ -1,14 +1,8 @@
 /* SUB-SECCIÓN GALERIA */
 
-.title__primary{
-    color: $color_letra_primary;
+.galeria__title{
+    @include title__bg;
     margin: 1%;
-    padding: 0;
-}
-
-.title__primary--text{
-    padding: 1.5%;
-    font-size: 1.4rem;
 }
 
 .galeria__container{

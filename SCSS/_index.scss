@@ -12,7 +12,7 @@
 }
 
 .body__img{
-    height: 90vh;
+    @extend .carousel__main;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -24,7 +24,7 @@
     text-decoration: none;
     width: 100%;
     height: auto;
-    font-size: 1.2rem;
+    font-size: $font_size_text;
 }
 
 .boton__link:hover{

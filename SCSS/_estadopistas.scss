@@ -1,0 +1,62 @@
+/* SUB-SECCIÓN ESTADO DE PISTAS */
+
+.parte__title{
+    border-bottom: solid 1px;
+    margin: 2% 0 1% 0;
+    padding: 0;
+    font-size: $font_size_title;
+}
+
+.parte__text{
+    font-size: $font_size_text;
+    margin-bottom: 2%;
+}
+
+.contenedor__div{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.estado__title{
+    @include title__bg;
+    margin: 0 0 2% 0;
+}
+
+.estado__subtitle{
+    @include subtitle__bg;
+    margin: 0 0 2% 0;
+}
+
+.estado__text{
+    font-size: $font_size_text;
+    margin: 0 0 0.5% 0;
+    padding: 0;
+    border-bottom: solid 1px $color_letra_secondary;
+}
+
+.estado__text--ppal{
+    font-size: $font_size_text;
+    font-weight: bold;
+    margin: 0 0 0.5% 0;
+    padding: 0;
+    border-bottom: solid 1px $color_letra_secondary;
+}
+
+@each $estado, $color in $medios__elevacion{
+    .estado__#{$estado}{
+        color: $color;
+    }
+}
+
+.area__title{
+    font-size: $font_size_subtitle;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+@each $dificultad, $color in $dificultad__pistas{
+    .dif__#{$dificultad}{
+        background-color: $color;
+        @include pistas;
+    }
+}

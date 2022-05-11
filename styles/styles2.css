@@ -22,22 +22,17 @@ body {
   margin-left: 1%; }
 
 .logo__text {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.562);
   margin-bottom: 0;
   margin-left: 5%; }
 
 .menuitem__prop {
   color: rgba(255, 255, 255, 0.562);
-  font-size: 1.2rem; }
+  font-size: 1.4rem !important; }
 
 /* ACA COMIENZA EL FOOTER - COMPARTIDO PARA TODAS */
-.logoredes__logo--img {
-  width: 50px;
-  height: 50px;
-  padding: 5%; }
-
-.logoredes__red--img {
+.logoredes__logo--img, .logoredes__red--img {
   width: 50px;
   height: 50px;
   padding: 5%; }
@@ -74,10 +69,7 @@ body {
   margin-right: -15px;
   border-bottom: solid 1px lightgray; }
 
-.carousel__main {
-  height: 90vh; }
-
-.body__img {
+.carousel__main, .body__img {
   height: 90vh; }
 
 .carousel-indicators [data-bs-target] {
@@ -139,14 +131,12 @@ body {
   grid-area: card5; }
 
 /* SUB-SECCIÓN GALERIA */
-.title__primary {
+.galeria__title {
+  background-color: #343a40;
   color: rgba(255, 255, 255, 0.562);
-  margin: 1%;
-  padding: 0; }
-
-.title__primary--text {
+  font-size: 1.6rem;
   padding: 1.5%;
-  font-size: 1.4rem; }
+  margin: 1%; }
 
 .galeria__container {
   width: 80%;
@@ -192,6 +182,97 @@ body {
   height: auto;
   min-height: 300px;
   cursor: pointer; }
+
+/* SUB-SECCIÓN ESTADO DE PISTAS */
+.parte__title {
+  border-bottom: solid 1px;
+  margin: 2% 0 1% 0;
+  padding: 0;
+  font-size: 1.6rem; }
+
+.parte__text {
+  font-size: 1.2rem;
+  margin-bottom: 2%; }
+
+.contenedor__div {
+  margin-bottom: 2%;
+  margin-top: 2%; }
+
+.estado__title {
+  background-color: #343a40;
+  color: rgba(255, 255, 255, 0.562);
+  font-size: 1.6rem;
+  padding: 1.5%;
+  margin: 0 0 2% 0; }
+
+.estado__subtitle {
+  background-color: #B9C2BA;
+  color: #2F3030;
+  font-size: 1.6rem;
+  padding: 1.5%;
+  margin: 0 0 2% 0; }
+
+.estado__text {
+  font-size: 1.2rem;
+  margin: 0 0 0.5% 0;
+  padding: 0;
+  border-bottom: solid 1px rgba(168, 168, 168, 0.651); }
+
+.estado__text--ppal {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 0.5% 0;
+  padding: 0;
+  border-bottom: solid 1px rgba(168, 168, 168, 0.651); }
+
+.estado__cerrado {
+  color: #DC4423; }
+
+.estado__condicional {
+  color: #FAAA1E; }
+
+.estado__abierto {
+  color: #08B61A; }
+
+.area__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1%; }
+
+.dif__facil {
+  background-color: green;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 0; }
+
+.dif__intermedio {
+  background-color: blue;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 0; }
+
+.dif__dificil {
+  background-color: red;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 0; }
+
+.dif__muy-dificil {
+  background-color: black;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 0; }
+
+.dif__fuerapista {
+  background-color: yellow;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 0; }
 
 /* SECCION ACTIVIDADES */
 .act__img {

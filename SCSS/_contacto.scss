@@ -29,13 +29,13 @@
 }
 
 .fieldset__text{
-    font-size: 1.4rem;
+    font-size: $font_size_subtitle;
     font-weight: bold;
 }
 
 .form__label{
     display: block;
-    font-size: 1.2rem;
+    font-size: $font_size_text
 }
 
 .form__container{

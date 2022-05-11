@@ -1,6 +1,46 @@
 $color_letra_primary: rgba(255, 255, 255, 0.562);
 $color_letra_secondary: rgba(168, 168, 168, 0.651);
 $color_letra_terciary: rgba(255, 255, 255, 0.8);
+$color_letra_subtitle: #2F3030;
+$font_size_title: 1.6rem;
+$font_size_subtitle: 1.4rem;
+$font_size_text: 1.2rem;
+
+@mixin title__bg {
+    background-color: #343a40;
+    color: $color_letra_primary;
+    font-size: $font_size_title;
+    padding: 1.5%
+}
+
+@mixin subtitle__bg {
+    background-color: #B9C2BA;
+    color: $color_letra_subtitle;
+    font-size: $font_size_title;
+    padding: 1.5%
+}
+
+$medios__elevacion: (
+    cerrado: #DC4423,
+    condicional: #FAAA1E,
+    abierto: #08B61A
+);
+
+$dificultad__pistas: (
+    facil: green,
+    intermedio: blue,
+    dificil: red,
+    muy-dificil: black,
+    fuerapista: yellow
+
+);
+
+@mixin pistas {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 0;
+}
 
 html{
     font-size: 62.5%;
@@ -33,7 +73,7 @@ body{
 }
 
 .logo__text{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: $color_letra_primary;
     margin-bottom: 0;
     margin-left: 5%;
@@ -41,7 +81,7 @@ body{
 
 .menuitem__prop{
     color: $color_letra_primary;
-    font-size: 1.2rem;
+    font-size: $font_size_subtitle !important;
 }
 
 /* ACA COMIENZA EL FOOTER - COMPARTIDO PARA TODAS */
@@ -53,9 +93,7 @@ body{
 }
 
 .logoredes__red--img{
-    width: 50px;
-    height: 50px;
-    padding: 5%;
+    @extend .logoredes__logo--img
 } 
 
 .logoredes__logo--link{
@@ -65,24 +103,24 @@ body{
 .footer__button--link{
     color: $color_letra_primary; 
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: $font_size_text;
 }
 
 .footer__button--link:hover{
     color: $color_letra_terciary; 
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: $font_size_text;
 }
 
 .logoredes__logo--title{
-    font-size: 1.2rem;
+    font-size: $font_size_text;
     color: $color_letra_primary;
     margin:0;
 }
 
 .menuitem__prop{
     color: $color_letra_primary;
-    font-size: 1.2rem;
+    font-size: $font_size_text;
 }
 
 .logoredes__logo--link{

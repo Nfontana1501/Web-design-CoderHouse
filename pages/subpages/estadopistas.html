@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <title>Cerro Patagonia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../../styles/styles2.css">
+</head>
+<body>    
+    <div class="container-fluid">
+        <header class="row header__margin sticky-top">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-expand-md row">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo__cont col-lg-4" href="../../index.html">
+                        <img src="../../images/logo.png" alt="logo cerro patagonia" class="d-inline-block align-text-center logo__img img-fluid">
+                        <P class="logo__text"> Cerro Patagonia</P>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end bg-dark col-lg-8" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title menuitem__prop" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nabvar__margin">
+                                <li class="nav-item">
+                                    <a class="nav-link menuitem__prop" aria-current="page" href="../../index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menuitem__prop active" href="pages/montania.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Montaña
+                                    </a>
+                                    <ul class="dropdown-menu bg-dark" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Estado de pistas</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">mapa de pistas</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="pages/subpages/galeria.html">Fotos y videos</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ficha técnica</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ubicación</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider menuitem__prop">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="../montania.html">Montaña</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menuitem__prop" href="pages/actividades.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Actividades
+                                    </a>
+                                    <ul class="dropdown-menu bg-dark" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ski y Snowboard</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Snowpark</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ski school</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Ski adaptado</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Caminata con raquetas</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider menuitem__prop">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="../actividades.html">Actividades</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menuitem__prop" href="pages/servicios.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Servicios
+                                    </a>
+                                    <ul class="dropdown-menu bg-dark" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Tarifas</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Compra online</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Rental</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="#">Gastronomía</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider menuitem__prop">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menuitem__prop" href="../servicios.html">Servicios</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menuitem__prop" aria-current="page" href="../contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="row justify-content-center">
+            <article class="col-lg-9 justify-content-start">
+                <h2 class="parte__title">Parte diario</h2>
+                <p class="parte__text">Última actualización 14/04. Espere nuevo parte diario.</p>
+            </article>
+            <article class="col-lg-9 row contenedor__div">
+                <div class="col-lg-12 row ">
+                    <div class="col-lg-12 row">
+                        <h2 class="estado__title col-lg-3 text-center">Condiciones climáticas</h2>
+                    </div>
+                    <div class="row col-lg-6">
+                        <p class="col-lg-3 estado__text"></p>
+                        <p class="col-lg-3 estado__text--ppal text-center">Temperatura</p>
+                        <p class="col-lg-3 estado__text--ppal text-center">Viento</p>
+                        <p class="col-lg-3 estado__text--ppal text-center">Nieve acumulada</p>
+                        <p class="col-lg-3 estado__text--ppal">Base</p>
+                        <p class="col-lg-3 estado__text text-center">5°C</p>
+                        <p class="col-lg-3 estado__text text-center">9Km/h</p>
+                        <p class="col-lg-3 estado__text text-center">0cm</p>
+                        <p class="col-lg-3 estado__text--ppal">1500mts</p>
+                        <p class="col-lg-3 estado__text text-center">4°C</p>
+                        <p class="col-lg-3 estado__text text-center">13Km/h</p>
+                        <p class="col-lg-3 estado__text text-center">0cm</p>
+                        <p class="col-lg-3 estado__text--ppal">1800mts</p>
+                        <p class="col-lg-3 estado__text text-center">0°C</p>
+                        <p class="col-lg-3 estado__text text-center">0Km/h</p>
+                        <p class="col-lg-3 estado__text text-center">0cm</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-9 row contenedor__div">
+                <div class="col-lg-12 text-center row">
+                        <h2 class="estado__title col-lg-3">Medios de elevación</h2>
+                </div>
+                    <div class="row col-lg-5 ">
+                        <p class="col-lg-4 estado__text"></p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Estado</p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Horarios de actividad</p>
+                        <p class="col-lg-4 estado__text--ppal">Magic carpet 1</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">Magic carpet 2</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">Magic carpet 3</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">Poma 18</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">TC cumbre</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">10 a 16:30hs</p>
+                        <p class="col-lg-4 estado__text--ppal">TC Jean Pierre</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">TS bosque</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                    </div>
+                    <div class="row col-lg-5 offset-lg-1 ">
+                        <p class="col-lg-4 estado__text"></p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Estado</p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Horarios de actividad</p>
+                        <p class="col-lg-4 estado__text--ppal">TS Chaltén</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">TS Lagos</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">TS Lenga</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">TS panorámico</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">TS Principal</p>
+                        <p class="col-lg-4 estado__text text-center estado__abierto">Abierto</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">TS sillita</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                        <p class="col-lg-4 estado__text--ppal">TS T-bar</p>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text text-center">9 a 17hs</p>
+                    </div>
+            </article>
+            <article class="col-lg-9 row contenedor__div">
+                <div class="col-lg-11 row ">
+                    <div class="col-lg-12 row">
+                        <h2 class="estado__subtitle col-lg-3 text-center">Referencias</h2>
+                    </div>
+                    <div class="row col-lg-12 ">
+                        <p class="col-lg-3 estado__text--ppal estado__abierto">Abierto</p>
+                        <p class="col-lg-9 estado__text">El medio de elevación funciona con normalidad</p>
+                        <p class="col-lg-3 estado__text--ppal estado__condicional">Condicional</p>
+                        <p class="col-lg-9 estado__text">El medio de elevación puede tener paradas temporales, o puede ser cerrado en cualquier momento, por condiciones climaticas, de pistas, o tecnicas que le impidan operar.</p>
+                        <p class="col-lg-3 estado__text--ppal estado__cerrado">Cerrado</p>
+                        <p class="col-lg-9 estado__text">El medio de elevación se encuentra cerrado por condiciones climaticas, de pistas, o técnicas que le impidan operar.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-9 row contenedor__div">
+                <div class="col-lg-12 text-center row">
+                        <h2 class="estado__title col-lg-3">Estado de pistas</h2>
+                </div>
+                    <div class="row col-lg-5 ">
+                        <p class="col-lg-12 text-center area__title">Área principiantes</p>
+                        <p class="col-lg-4 estado__text"></p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Nivel</p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Estado</p>
+                        <p class="col-lg-4 estado__text--ppal">Principiantes 1</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Principiantes 2</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Principiantes 3</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Pista 4</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__intermedio align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                    </div>
+                    <div class="row col-lg-5 offset-lg-1 ">
+                        <p class="col-lg-12 text-center area__title">Área 1200</p>
+                        <p class="col-lg-4 estado__text"></p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Nivel</p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Estado</p>
+                        <p class="col-lg-4 estado__text--ppal">Panorámico inferior</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">conexión 1200</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__intermedio align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Fuga</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__intermedio align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Principal</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                    </div>
+                    <div class="row col-lg-5 ">
+                        <p class="col-lg-12 text-center area__title">Zona centro</p>
+                        <p class="col-lg-4 estado__text"></p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Nivel</p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Estado</p>
+                        <p class="col-lg-4 estado__text--ppal">Camino panorámico</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Conexión 1500</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Pista 18</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__intermedio align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Conexión 18</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__intermedio align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Isaías</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Estadio</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Bosque</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Tren fantasma</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Pista 9</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__intermedio align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Media luna</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__intermedio align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Pudú</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Embudo</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                    </div>
+                    <div class="row col-lg-5 offset-lg-1 ">
+                        <p class="col-lg-12 text-center area__title">Cañadón pvocinciales</p>
+                        <p class="col-lg-4 estado__text"></p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Nivel</p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Estado</p>
+                        <p class="col-lg-4 estado__text--ppal">Central</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__intermedio lign-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Cornisa</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Del sargento</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Camino provinciales</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__intermedio align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-12 text-center area__title">Recreación</p>
+                        <p class="col-lg-4 estado__text"></p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Nivel</p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Estado</p>
+                        <p class="col-lg-4 estado__text--ppal">Caminata con raquetas</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Snowtubing</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Culipatín</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Snowpark</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                    </div>
+                    <div class="row col-lg-5 ">
+                        <p class="col-lg-12 text-center area__title">Área del T-Bar</p>
+                        <p class="col-lg-4 estado__text"></p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Nivel</p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Estado</p>
+                        <p class="col-lg-4 estado__text--ppal">T-Bar</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__muy-dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Los lagos</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__muy-dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                    </div>
+                    <div class="row col-lg-5 offset-lg-1 ">
+                        <p class="col-lg-12 text-center area__title">Fuera de pista</p>
+                        <p class="col-lg-4 estado__text"></p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Nivel</p>
+                        <p class="col-lg-4 estado__text--ppal text-center">Estado</p>
+                        <p class="col-lg-4 estado__text--ppal">Tobogán</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__fuerapista align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                        <p class="col-lg-4 estado__text--ppal">Cañadón</p>
+                        <div class="col-lg-4 estado__text align-items-center d-flex justify-content-center">
+                            <p class="dif__fuerapista align-self-center"></p>
+                        </div>
+                        <p class="col-lg-4 estado__text text-center estado__cerrado">Cerrado</p>
+                    </div>
+            </article>
+            <article class="col-lg-9 row contenedor__div">
+                <div class="col-lg-11 row ">
+                    <div class="col-lg-12 row">
+                        <h2 class="estado__subtitle col-lg-3 text-center">Referencias</h2>
+                    </div>
+                    <div class="row col-lg-12">
+                        <p class="col-lg-3 estado__text--ppal estado__abierto">Abierto</p>
+                        <p class="col-lg-9 estado__text">El medio de elevación funciona con normalidad</p>
+                        <p class="col-lg-3 estado__text--ppal estado__condicional">Condicional</p>
+                        <p class="col-lg-9 estado__text">El medio de elevación puede tener paradas temporales, o puede ser cerrado en cualquier momento, por condiciones climaticas, de pistas, o tecnicas que le impidan operar.</p>
+                        <p class="col-lg-3 estado__text--ppal estado__cerrado">Cerrado</p>
+                        <p class="col-lg-9 estado__text">El medio de elevación se encuentra cerrado por condiciones climaticas, de pistas, o técnicas que le impidan operar.</p>
+                        <div class="col-lg-3 estado__text align-items-center d-flex justify-content-start">
+                            <p class="dif__facil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-9 estado__text">Nivel de pista: Fácil</p>
+                        <div class="col-lg-3 estado__text align-items-center d-flex justify-content-start">
+                            <p class="dif__intermedio align-self-center"></p>
+                        </div>
+                        <p class="col-lg-9 estado__text">Nivel de pista: Intermedio</p>
+                        <div class="col-lg-3 estado__text align-items-center d-flex justify-content-start">
+                            <p class="dif__dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-9 estado__text">Nivel de pista: Difícil</p>
+                        <div class="col-lg-3 estado__text align-items-center d-flex justify-content-start">
+                            <p class="dif__muy-dificil align-self-center"></p>
+                        </div>
+                        <p class="col-lg-9 estado__text">Nivel de pista: Muy difícil</p>
+                        <div class="col-lg-3 estado__text align-items-center d-flex justify-content-start">
+                            <p class="dif__fuerapista align-self-center"></p>
+                        </div>
+                        <p class="col-lg-9 estado__text">Nivel de pista: Fuera de pista</p>
+                    </div>
+                </div>
+            </article>
+        </main> 
+        <footer class="footer bg-dark row">
+            <div class="buttons row align-items-center justify-content-center col-lg-5 col-md-5 col-sm-6 col-12">
+                <div class="footer__button footer__button1 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center align-items-center">
+                    <a class="nav-link footer__button--link text-center" href="../montania.html">Montaña</a> 
+                </div>
+                <div class="footer__button footer__button2 align-text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                    <a class="nav-link footer__button--link text-center" href="../actividades.html">Actividades</a> 
+                </div>
+                <div class="footer__button footer__button3 align-text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                    <a class="nav-link footer__button--link text-center" href="../servicios.html">Servicios</a> 
+                </div>
+                <div class="footer__button footer__button4 align-text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                    <a class="nav-link footer__button--link text-center" href="../contacto.html">Contacto</a> 
+                </div>
+            </div>
+            <div class="logoredes d-flex row justify-content-end col-lg-7 col-md-7 col-sm-6 col-12">
+                <div class="logoredes__logo d-flex align-items-center justify-content-center col-lg-6 col-md-6 col-sm-6 col-12">
+                    <a class="logoredes__logo--link" href="../index.html"> 
+                        <img class="logoredes__logo--img img-fluid" src="../../images/logo.png" alt="logo cerro patagonia">
+                    </a>
+                    <a class="logoredes__logo--link" href="../../index.html">
+                        <h3 class="logoredes__logo--title align-text-center">Cerro Patagonia</h3>
+                    </a>
+                </div>
+                <div class="logoredes__red d-flex justify-content-center align-items-center offset-3 col-lg-3 col-md-3 col-sm-3 col-12">
+                    <div class="logoredes__red--fb">
+                        <a class="logoredes__red--link" href="https://facebook.com" target="_blank">
+                            <img class="logoredes__red--img img-fluid" src="../../images/facebookicon.png" alt="facebook icon">               
+                        </a>
+                    </div>
+                    <div class="logoredes__red--ig">
+                        <a class="logoredes__red--link" href="https://instagram.com" target="_blank">
+                            <img class="logoredes__red--img img-fluid" src="../../images/instagramicon.png" alt="instagram icon">               
+                        </a>
+                    </div>
+                    <div class="logoredes__red--tw">
+                        <a class="logoredes__red--link" href="https://twitter.com" target="_blank">
+                            <img class="logoredes__red--img img-fluid" src="../../images/twittericon.png" alt="twitter icon">               
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
