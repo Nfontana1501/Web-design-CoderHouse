@@ -1,0 +1,16 @@
+
+.ficha__title--general{
+    @extend .parte__title
+};
+
+.ficha__title{
+    @extend .estado__title
+};
+
+.ficha__text{
+    @extend .estado__text
+};
+
+.ficha__text--ppal{
+    @extend .estado__text--ppal
+};
