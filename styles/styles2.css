@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins&display=swap");
 html {
   font-size: 62.5%; }
 
@@ -29,7 +30,7 @@ body {
 
 .menuitem__prop {
   color: rgba(255, 255, 255, 0.562);
-  font-size: 1.4rem !important; }
+  font-size: 1.6rem !important; }
 
 /* ACA COMIENZA EL FOOTER - COMPARTIDO PARA TODAS */
 .logoredes__logo--img, .logoredes__red--img {
@@ -43,21 +44,21 @@ body {
 .footer__button--link {
   color: rgba(255, 255, 255, 0.562);
   text-decoration: none;
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
 
 .footer__button--link:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
 
 .logoredes__logo--title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.562);
   margin: 0; }
 
 .menuitem__prop {
   color: rgba(255, 255, 255, 0.562);
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
 
 .logoredes__logo--link {
   text-decoration: none;
@@ -80,7 +81,7 @@ body {
   text-decoration: none;
   width: 100%;
   height: auto;
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
 
 .boton__link:hover {
   color: rgba(255, 255, 255, 0.8); }
@@ -113,7 +114,7 @@ body {
   width: 100%; }
 
 .card-text {
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
 
 .card1 {
   grid-area: card1; }
@@ -134,7 +135,7 @@ body {
 .galeria__title {
   background-color: #343a40;
   color: rgba(255, 255, 255, 0.562);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 1.5%;
   margin: 1%; }
 
@@ -185,13 +186,13 @@ body {
 
 /* SUB-SECCIÓN ESTADO DE PISTAS + EXTENDS A FICHA TÉCNICA */
 .parte__title, .ficha__title--general, .mapa__title--general {
-  border-bottom: solid 1px;
+  border-bottom: solid 1.5px;
   margin: 2% 0 1% 0;
-  padding: 0;
-  font-size: 1.6rem; }
+  padding: 0 0 1% 0;
+  font-size: 1.8rem; }
 
 .parte__text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 2%; }
 
 .contenedor__div {
@@ -201,25 +202,25 @@ body {
 .estado__title, .ficha__title {
   background-color: #343a40;
   color: rgba(255, 255, 255, 0.562);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 1.5%;
   margin: 0 0 2% 0; }
 
 .estado__subtitle {
   background-color: #B9C2BA;
   color: #2F3030;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 1.5%;
   margin: 0 0 2% 0; }
 
 .estado__text, .ficha__text, .legales__text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 0 0 0.5% 0;
   padding: 0;
   border-bottom: solid 1px rgba(168, 168, 168, 0.651); }
 
 .estado__text--ppal, .ficha__text--ppal {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin: 0 0 0.5% 0;
   padding: 0;
@@ -235,7 +236,7 @@ body {
   color: #08B61A; }
 
 .area__title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin-top: 1%; }
 
@@ -284,7 +285,7 @@ body {
 
 .act__btn {
   color: rgba(255, 255, 255, 0.562);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 15%;
   min-width: 60px; }
 
@@ -307,14 +308,14 @@ body {
 
 .servicios__btn {
   color: rgba(255, 255, 255, 0.562);
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
 
 .servicios__btn:hover {
   color: rgba(255, 255, 255, 0.8); }
 
 /* SUB-SECCIÓN TARTIFAS */
 .tarifa__text--primary, .tarifa__text--secondary {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background-color: rgba(168, 168, 168, 0.251);
   padding: 0.5%;
   margin-bottom: 0.2%;
@@ -333,6 +334,19 @@ body {
 .legales__text {
   border: none;
   margin-bottom: 2%; }
+
+/* SUB-SECCIÓN TARTIFAS */
+.gastro__title {
+  font-size: 1.8rem;
+  padding: 2%;
+  border-bottom: solid 1.5px #2F3030; }
+
+.gastro__text {
+  font-size: 1.4rem;
+  margin-top: 2%; }
+
+.gastro__img {
+  min-height: 276px; }
 
 /* SECCIÓN CONTACTO */
 .main__container--contacto {
@@ -360,12 +374,12 @@ body {
   padding: 10% 10% 10% 10%; }
 
 .fieldset__text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold; }
 
 .form__label {
   display: block;
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
 
 .form__container {
   margin-bottom: 5%;

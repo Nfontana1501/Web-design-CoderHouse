@@ -27,32 +27,3 @@
     border: none;
     margin-bottom: 2%;
 }
-
-// .tarifas__table{
-//     display: grid;
-//     justify-items: center;
-//     height: auto;
-//     grid-template-columns: repeat(9, 1fr);
-//     grid-template-rows: repeat(13, 1fr);
-//     grid-template-areas: 
-//         ". 1 1 2 2 3 3 4 4"
-//         ". 5 5 2 2 3 3 4 4 ";
-// }
-
-// $tarifas__grid: (
-//     cerrado: #DC4423,
-//     condicional: #FAAA1E,
-//     abierto: #08B61A
-// );
-
-// @each $p, $numero in $tarifas__grid{
-//     .p-#{$numero}{
-//         color: $color;
-//     }
-// }
-
-// @for $I from 1 through 25{
-//     .p-#{$I}{
-//         grid-area: $I;
-//     }
-// }

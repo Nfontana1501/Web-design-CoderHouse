@@ -2,9 +2,9 @@ $color_letra_primary: rgba(255, 255, 255, 0.562);
 $color_letra_secondary: rgba(168, 168, 168, 0.651);
 $color_letra_terciary: rgba(255, 255, 255, 0.8);
 $color_letra_subtitle: #2F3030;
-$font_size_title: 1.6rem;
-$font_size_subtitle: 1.4rem;
-$font_size_text: 1.2rem;
+$font_size_title: 1.8rem;
+$font_size_subtitle: 1.6rem;
+$font_size_text: 1.4rem;
 
 @mixin title__bg {
     background-color: #343a40;
@@ -46,7 +46,7 @@ html{
     font-size: 62.5%;
 }
 
-// @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins&display=swap');
 
 body{
     height: 100vh;
