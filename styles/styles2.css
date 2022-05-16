@@ -212,7 +212,7 @@ body {
   padding: 1.5%;
   margin: 0 0 2% 0; }
 
-.estado__text, .ficha__text {
+.estado__text, .ficha__text, .legales__text {
   font-size: 1.2rem;
   margin: 0 0 0.5% 0;
   padding: 0;
@@ -311,6 +311,28 @@ body {
 
 .servicios__btn:hover {
   color: rgba(255, 255, 255, 0.8); }
+
+/* SUB-SECCIÓN TARTIFAS */
+.tarifa__text--primary, .tarifa__text--secondary {
+  font-size: 1.2rem;
+  background-color: rgba(168, 168, 168, 0.251);
+  padding: 0.5%;
+  margin-bottom: 0.2%;
+  font-weight: bold; }
+
+.tarifa__text--secondary {
+  background-color: rgba(168, 168, 168, 0.651); }
+
+.temporadas {
+  margin-top: 2%; }
+
+.temporadas__division {
+  margin-top: 4%;
+  border-top: solid 1px rgba(168, 168, 168, 0.651); }
+
+.legales__text {
+  border: none;
+  margin-bottom: 2%; }
 
 /* SECCIÓN CONTACTO */
 .main__container--contacto {
