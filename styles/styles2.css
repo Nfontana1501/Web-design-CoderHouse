@@ -395,7 +395,8 @@ body {
   border-radius: 5px;
   padding: 5px;
   margin: 20px 20px 0 0;
-  color: rgba(255, 255, 255, 0.562); }
+  color: rgba(255, 255, 255, 0.562);
+  width: 30%; }
 
 .form__button:hover {
   color: rgba(255, 255, 255, 0.8); }
