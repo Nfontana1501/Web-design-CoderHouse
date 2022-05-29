@@ -25,6 +25,9 @@
     .act__btn{
         min-width: 60px;
     }
+    .carousel__main{
+        height: 70vh;
+    }
 }
 
 @media (max-width: 576px){
@@ -54,6 +57,9 @@
     .form{
         width: 100%;
     }
+    .carousel__main{
+        height: 60vh;
+    }
 }
 
 @media (max-width: 360px){
@@ -82,5 +88,8 @@
     }
     .form{
         width: 100%;
+    }
+    .carousel__main{
+        height: 50vh;
     }
 }

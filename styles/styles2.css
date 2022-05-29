@@ -86,6 +86,9 @@ body {
 .boton__link:hover {
   color: rgba(255, 255, 255, 0.8); }
 
+.btn__container {
+  padding: 0; }
+
 /* SECCIÓN MONTAÑA */
 .main__container--montania {
   display: grid;
@@ -438,7 +441,9 @@ body {
   .act__img {
     max-height: 200px; }
   .act__btn {
-    min-width: 60px; } }
+    min-width: 60px; }
+  .carousel__main, .body__img {
+    height: 70vh; } }
 
 @media (max-width: 576px) {
   .main__container--montania {
@@ -456,7 +461,9 @@ body {
   .act__btn {
     min-width: 60px; }
   .form {
-    width: 100%; } }
+    width: 100%; }
+  .carousel__main, .body__img {
+    height: 60vh; } }
 
 @media (max-width: 360px) {
   .main__container--montania {
@@ -474,4 +481,6 @@ body {
   .act__btn {
     min-width: 60px; }
   .form {
-    width: 100%; } }
+    width: 100%; }
+  .carousel__main, .body__img {
+    height: 50vh; } }
