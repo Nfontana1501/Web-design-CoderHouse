@@ -284,7 +284,11 @@ body {
 
 /* SUB-SECCIÓN MAPA DE PISTAS */
 .mapa__div {
-  margin: 2% 0 2% 0; }
+  margin: 2% 0 2% 0;
+  height: 80vh; }
+
+.mapa {
+  height: 80vh; }
 
 /* SECCION ACTIVIDADES */
 .act__img {
